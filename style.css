@@ -2,9 +2,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    /* padding-inline: 20px; */
-}
+/* body{
+    margin-inline: 20px;
+} */
 .navbar {
     display: flex;
     justify-content: space-between;
