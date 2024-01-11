@@ -134,7 +134,7 @@ body {
 .vision-mission {
     display: flex;
     padding-inline: 25px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     gap: 75px;
     margin-top: 50px;
 }
