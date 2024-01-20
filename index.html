@@ -8,6 +8,144 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <style>
+        @media (max-width: 480px) {
+            body {
+                margin-inline: 20px;
+            }
+
+            .logo img {
+                width: 225px;
+                height: 45px;
+            }
+
+            .packs {
+                visibility: hidden;
+                display: none;
+            }
+
+            .vision-mission {
+                display: block;
+                font-size: 15px;
+            }
+
+            .vision-mission1 {
+                display: block;
+            }
+
+            #scroll-img {
+                width: 318px;
+            }
+
+            .navbar a {
+                font-size: 10px;
+            }
+
+            .name h1 {
+                font-size: 25px;
+            }
+
+            .search-box {
+                width: 320px;
+            }
+
+            .buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+                font-size: 10px;
+                max-width: max-content;
+                /* justify-items: center; */
+                padding-inline: 0%;
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #myths img {
+                width: 317px;
+                height: 287px;
+            }
+
+            .DelveIntoOurExtensiveServices {
+                font-size: 25px;
+            }
+
+            .bussiness {
+                display: grid;
+                grid-template-columns: auto;
+                gap: 0px;
+            }
+
+            #work img {
+                width: 400px;
+                height: 300px;
+            }
+
+            .HowWeWork {
+                font-size: 25px;
+            }
+
+            .WhyChooseUs {
+                font-size: 25px;
+            }
+
+            .wrapper {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                padding: 0%;
+            }
+
+            .vision-mission1 .scroll .updates h4 {
+                margin: 0%;
+            }
+
+            .reviews-text {
+                flex-direction: column;
+            }
+
+            .company-logo {
+                visibility: hidden;
+                max-height: 0px;
+                max-width: 0px;
+            }
+
+            .review-box {
+                display: block;
+                padding-top: 0%;
+            }
+
+            .rectangle16{
+                padding-bottom: 20px;
+            }
+
+            .ContactOurExperts {
+                font-size: 25px;
+            }
+            #map{
+                display: none;
+                visibility: hidden;
+            }
+            .footer-logo img{
+                width: 300px;
+                height: 50px;
+            }
+            .details{
+                grid-template-columns: 1fr 1fr;
+            }
+            .terms{
+                display: block;
+            }
+            #br-hide{
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,10 +157,15 @@
             <a href="http://">
                 <div class="login">LOGIN</div>
             </a>
-            <div class="dropdown">
-                <button class="dropbtn" id="menu-logo"><img src="./assets/Rectangle 18.svg" width="25px"
-                        height="25px"></button>
-                <div class="dropdown-content">
+            <div class="dropdown" onclick="toggleDropdown()">
+                <button class="dropbtn">
+                    <div class="container">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
                     <a href="#">Accounts and Audit</a>
                     <a href="#">Payroll Management</a>
                     <a href="#">Licence & Registration</a>
@@ -38,7 +181,7 @@
     </div>
 
     <div class="name">
-        <h1 style="font-size: 38px;">Compliance at Convenience</h1>
+        <h1>Compliance at Convenience</h1>
 
         <div class="search-container">
             <div class="search-icon">&#128269;</div>
@@ -70,9 +213,6 @@
                 <div class="btn">GST Registration
                 </div>
             </a>
-
-        </div>
-        <div class="buttons">
             <a href="http://">
                 <div class="btn">GST Registration
                 </div>
@@ -85,6 +225,19 @@
                 <div class="btn">I need Help</div>
             </a>
         </div>
+        <!-- <div class="buttons">
+            <a href="http://">
+                <div class="btn">GST Registration
+                </div>
+            </a>
+            <a href="http://">
+                <div class="btn">GST Registration
+                </div>
+            </a>
+            <a href="mailto:manikanta9k7@gmail.com" target="_blank" rel="noopener noreferrer">
+                <div class="btn">I need Help</div>
+            </a>
+        </div> -->
     </div>
     <br>
     <br>
@@ -97,7 +250,7 @@
             <div class="vission-txt">
                 <h2 style="text-align: center;">Our Vision</h2>
                 <div
-                    style="width: 100%; height: 100%; text-align: center; color: black; font-size: 20px; font-weight: 400; word-wrap: break-word">
+                    style="width: 100%; height: 100%; text-align: center; color: black;  font-weight: 400; word-wrap: break-word">
                     "Leading financial transformation with integrity and insight. Empowering businesses for confident
                     growth through strategic financial guidance."</div>
 
@@ -111,7 +264,7 @@
             <div class="vission-txt">
                 <h2 style="text-align: center;">Our Mission</h2>
                 <div
-                    style="width: 100%; height: 100%; text-align: center; color: black; font-size: 20px; font-weight: 400; word-wrap: break-word">
+                    style="width: 100%; height: 100%; text-align: center; color: black; font-weight: 400; word-wrap: break-word">
                     "Empowering businesses with financial expertise and compliance excellence. Through analysis,
                     guidance, and ethics, we drive growth and ensure success."</div>
             </div>
@@ -129,16 +282,16 @@
                 text-align: center ">New Updates</h4>
                 <img src="./assets/Rectangle 52.png" width="25px" height="25px">
             </div>
-            <img src="./assets/scroll.gif" alt="" width="388px" height="477px">
+            <img src="./assets/scroll.gif" alt="" id="scroll-img">
         </div>
-        <div style="display: flex;justify-content: center; align-items: center;"><img src="./assets/myths.gif" alt=""
-                width="617px" height="437px"></div>
+        <div style="display: flex;justify-content: center; align-items: center;" id="myths"><img
+                src="./assets/myths.gif" alt=""></div>
 
     </div>
 
     <div class="delve">
         <div class="DelveIntoOurExtensiveServices"
-            style="width: 100%; color: black; font-size: 38px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-align: center;">
+            style="width: 100%; color: black;  font-family: Inter; font-weight: 700; word-wrap: break-word; text-align: center;">
             Delve into Our Extensive Services</div>
         <ul class="bussiness">
             <li>Register Your Business
@@ -590,15 +743,15 @@
 
 
     <div class="HowWeWork"
-        style="text-align: center; color: black; font-size: 50px; font-weight: 700; word-wrap: break-word; padding-top: 30px;">
+        style="text-align: center; color: black;  font-weight: 700; word-wrap: break-word; padding-top: 30px;">
         How we work?</div>
-    <div style="display: flex; justify-content: center; align-items: center;"><img src="./assets/communication.gif"
-            alt="" sizes="" srcset=""></div>
+    <div style="display: flex; justify-content: center; align-items: center;" id="work"><img
+            src="./assets/communication.gif" alt="" sizes="" srcset=""></div>
 
 
 
     <div class="WhyChooseUs"
-        style=" text-align: center; color: black; font-size: 50px; font-weight: 700; word-wrap: break-word; padding-top: 30px;">
+        style=" text-align: center; color: black; font-weight: 700; word-wrap: break-word; padding-top: 30px;">
         Why Choose Us?</div>
     <br>
 
@@ -740,7 +893,7 @@
     <div class="contact-map">
         <div class="contact-box">
             <div class="ContactOurExperts"
-                style=" text-align: center; color: black; font-size: 38px; font-weight: 700; word-wrap: break-word">
+                style=" text-align: center; color: black;  font-weight: 700; word-wrap: break-word">
                 Contact our Experts</div>
 
 
@@ -767,7 +920,10 @@
 
 
         </div>
-        <img src="./assets/map.gif" alt="">
+        <div id="map">
+            <img src="./assets/map.gif" alt="">
+        </div>
+
     </div>
     <br>
     <br>
@@ -1071,12 +1227,32 @@
                 <li>
                     <div style="font-size: 20px; font-weight: 400; word-wrap: break-word">License</div>
                 </li>
+                <!-- <li>
+                    <div id="br-hide"><br></div>
+                </li> -->
+                <li><br></li>
+                <li>
+                    <div id="br-hide"><br></div>
+                </li>
+                <li>
+                    <div id="br-hide"><br></div>
+                </li>
+                <li>
+                    <div id="br-hide"><br></div>
+                </li>
+                <li>
+                    <div id="br-hide"><br></div>
+                </li>
+                <li>
+                    <div id="br-hide"><br></div>
+                </li>
+                
+                <!-- <li><br></li>
                 <li><br></li>
                 <li><br></li>
                 <li><br></li>
                 <li><br></li>
-                <li><br></li>
-                <li><br></li>
+                <li><br></li> -->
                 <li><a href="#" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a></li>
@@ -1088,6 +1264,14 @@
 
 </body>
 <script>
+    function toggleDropdown() {
+    var container = document.querySelector('.container');
+    container.classList.toggle("change");
+
+    var dropdownContent = document.getElementById("myDropdown");
+    dropdownContent.classList.toggle("show");
+}
+
     document.addEventListener('DOMContentLoaded', function () {
         var placeholders = ["Search through all our services", "Try 'GST Registration'", "Try 'Company Registration'"];
         var placeholderIndex = 0;
